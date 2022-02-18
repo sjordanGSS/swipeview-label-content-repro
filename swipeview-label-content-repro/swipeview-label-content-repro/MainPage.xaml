@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="swipeview_label_content_repro.MainPage">
+
+    <StackLayout Spacing="20">
+        <SwipeView x:Name="swipe1">
+            <SwipeView.LeftItems>
+                <SwipeItem Text="hello!"
+                           BackgroundColor="LightBlue"/>
+            </SwipeView.LeftItems>
+
+            <SwipeView.RightItems>
+                <SwipeItem Text="hello!"
+                           BackgroundColor="Pink" />
+            </SwipeView.RightItems>
+
+            <Label Text="swipe here"
+                   Padding="10"
+                   BackgroundColor="Orange" />
+        </SwipeView>
+
+        <SwipeView x:Name="swipe2">
+            <SwipeView.LeftItems>
+                <SwipeItem Text="hello!"
+                           BackgroundColor="LightBlue"/>
+            </SwipeView.LeftItems>
+
+            <SwipeView.RightItems>
+                <SwipeItem Text="hello!"
+                           BackgroundColor="Pink" />
+            </SwipeView.RightItems>
+
+            <Grid>
+                <Label Text="swipe here"
+                       Padding="10"
+                       BackgroundColor="Orange" />
+            </Grid>
+        </SwipeView>
+
+        <Button Text="Tap to swipe both"
+                Clicked="Button_Clicked" />
+    </StackLayout>
+
+</ContentPage>
